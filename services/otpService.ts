@@ -1,4 +1,3 @@
-import {OTP} from '../models/otp.js';
 import {users} from '../models/user.js';
 import {generateOTP} from '../utils/otpGenerator.js'
 

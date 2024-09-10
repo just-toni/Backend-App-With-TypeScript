@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PASSMAILER = exports.SERVICE = exports.USER = exports.PORT = void 0;
+var dotenv_1 = require("dotenv");
+dotenv_1.default.config();
+var PORT = process.env.PORT;
+exports.PORT = PORT;
+var USER = process.env.USER;
+exports.USER = USER;
+var SERVICE = process.env.SERVICE;
+exports.SERVICE = SERVICE;
+var PASSMAILER = process.env.PASSMAILER;
+exports.PASSMAILER = PASSMAILER;
