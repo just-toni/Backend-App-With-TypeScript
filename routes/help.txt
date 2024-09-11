@@ -1,0 +1,12 @@
+deals with assigning the incoming HTTP requests to the respective controller functions
+has no business logic
+defines the api endpoints which consists of 
+ - specifying the routes (from the controller functions)
+ - specifying the HTTP methods (get,post,delete etc)
+often include middleware for tasks like 
+ - authentication
+ - logging
+ - validation etc.
+before the request gets to the controller
+
+first you import the Router from express and then map the HTTP request to the specific controller function

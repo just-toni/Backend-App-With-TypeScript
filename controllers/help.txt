@@ -1,0 +1,4 @@
+this is where user requests are handled and responses are given
+it utilises the service class to perform the actual logic of the application
+this is where those status code i.e. HTTP things come into play
+i think it's also where we see the HTTP methods like get, put, post etc --nope, that's for the routes class

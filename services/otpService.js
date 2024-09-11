@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getOTP = getOTP;
+exports.validateOTP = validateOTP;
 var user_js_1 = require("../models/user.js");
 var otpGenerator_js_1 = require("../utils/otpGenerator.js");
 function getOTP(email) {

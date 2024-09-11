@@ -1,7 +1,7 @@
 import {users} from '../models/user.js';
 import {generateOTP} from '../utils/otpGenerator.js'
 
-function getOTP(email: string): number{
+export function getOTP(email: string): number{
     const otp = generateOTP();
     const user = users.find(user => user.email = email);
     if(user){
@@ -12,7 +12,7 @@ function getOTP(email: string): number{
     return otp;
 }
 
-function validateOTP(otp: number, email: string): boolean{
+export function validateOTP(otp: number, email: string): boolean{
     const authenticateUser = users.find(user => user.email = email);
     return authenticateUser?.otp == otp;
 }

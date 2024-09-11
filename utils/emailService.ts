@@ -1,18 +1,18 @@
 import nodemailer from 'nodemailer'
-import {PASSMAILER, USER, SERVICE} from '../config/envConfig.js'
+import { PASSMAILER, USER, SERVICE } from '../config/envConfig.js'
 
 
 export async function sendEmailOTP(email: string, OTP: number) {
-    try{
+    try {
         const transporter = nodemailer.createTransport({
             service: SERVICE,
             secure: true,
             auth: {
-                pass:PASSMAILER,
+                pass: PASSMAILER,
                 user: USER
             },
         });
-        await transporter.sendEmail({
+        await transporter.sendMail({
             from: USER,
             to: email,
             subject: "OTP SENT",
@@ -24,7 +24,7 @@ export async function sendEmailOTP(email: string, OTP: number) {
                     <p>Toni</p>`
         });
         console.log("otp email sent successfully!!!")
-    }catch(err){
+    } catch (err) {
         console.log(err, "OTP email not sent");
     }
-}
+};

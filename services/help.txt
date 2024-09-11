@@ -1,0 +1,2 @@
+this service folder deals with the actual logic of the application
+it is called by the controller classes which handle the requests from a user 
