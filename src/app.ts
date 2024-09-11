@@ -1,5 +1,5 @@
 import express from 'express';
-import routes from './routes/authRoutes.js'
+import routes from './src/routes/authRoutes.js'
 import bodyParser from 'body-parser';
 
 const app = express();
