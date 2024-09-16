@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
 import { PASSMAILER, USER, SERVICE } from '../config/envConfig.js'
 
 
